@@ -30,17 +30,17 @@ After arragement of the files you need to update the file
 'gradle.properties' in the project root and define the following
 properties:
 
-  * sdk.dir - path to Android SDK
-  * ndk.dir - path to Android NDK
-  * sdk.vrsion - Android API version
-  * ndk.ext - extension for ndk-build script (empty on Linux, .cmd on Windows)
+  * sdkDir - path to Android SDK
+  * ndkDir - path to Android NDK
+  * sdkVersion - Android API version
+  * ndkExt - extension for ndk-build script (empty on Linux, .cmd on Windows)
 
 For example:
 
-sdk.dir=/home/user/local/adt-bundle-linux-x86_64-20140321/sdk
-ndk.dir=/home/user/local/android-ndk-r9d
-sdk.version=19
-
+sdkDir=/home/user/local/adt-bundle-linux-x86_64-20140321/sdk
+ndkDir=/home/user/local/android-ndk-r9d
+sdkVersion=19
+ndkExt=
 After everything is set, run `gradle build`. It will create
 pocketsphinx-android-5prealpha-nolib.jar in build/libs. It will also
 create .so files in libs folder
